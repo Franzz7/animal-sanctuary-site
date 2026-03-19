@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fcfaf6;
+  color: #2c2c2c;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 252, 246, 0.95);
+  border-bottom: 1px solid #e6dccb;
+  backdrop-filter: blur(8px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5b6f45;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: #3d3d3d;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #5b6f45;
+}
+
+.hero {
+  min-height: 88vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(31, 42, 24, 0.45), rgba(31, 42, 24, 0.45)),
+    url('images/hero-sanctuary.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: 70px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.hero h1,
+.page-banner h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.96;
+}
+
+.btn-primary {
+  background: #5b6f45;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4c5e39;
+}
+
+.btn-secondary {
+  background: white;
+  color: #2c2c2c;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-soft {
+  background: #f4efe5;
+}
+
+.section-alt {
+  background: #f7f2e9;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-card,
+.contact-card,
+.form-wrapper,
+.contact-form,
+.donation-form {
+  background: white;
+  border: 1px solid #eadfce;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-card {
+  padding: 28px;
+}
+
+.about-card h3 {
+  margin-bottom: 14px;
+  color: #5b6f45;
+}
+
+.about-card ul {
+  padding-left: 20px;
+}
+
+.about-card li {
+  margin-bottom: 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-text p {
+  max-width: 700px;
+  margin: 0 auto 22px;
+}
+
+.page-banner {
+  padding: 90px 0 60px;
+  background: #efe6d8;
+  text-align: center;
+}
+
+.page-banner p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.animal-section {
+  padding: 70px 0;
+}
+
+.animal-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.animal-layout.reverse .animal-image {
+  order: 2;
+}
+
+.animal-layout.reverse .animal-text {
+  order: 1;
+}
+
+.animal-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.animal-type {
+  color: #5b6f45;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.animal-text p {
+  margin-bottom: 20px;
+}
+
+.animal-image img {
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.form-section {
+  background: #fcf7ef;
+}
+
+.form-wrapper {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.donation-form,
+.contact-form {
+  padding: 28px;
+}
+
+.donation-form label,
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.donation-form input,
+.donation-form select,
+.donation-form textarea,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #d8cdbd;
+  font-size: 1rem;
+  background: #fffdf9;
+}
+
+.full-width-btn {
+  width: 100%;
+}
+
+.form-message {
+  margin-top: 16px;
+  color: #5b6f45;
+  font-weight: 700;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact-card {
+  padding: 30px;
+}
+
+.contact-card h2 {
+  margin-bottom: 16px;
+}
+
+.site-footer {
+  background: #2f3b24;
+  color: #f5efe3;
+  padding: 45px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 25px;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: #f5efe3;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #2f3b24;
+}
+
+@media (max-width: 900px) {
+  .two-column,
+  .animal-layout,
+  .form-wrapper,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-layout.reverse .animal-image,
+  .animal-layout.reverse .animal-text {
+    order: initial;
+  }
+
+  .hero h1,
+  .page-banner h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section,
+  .animal-section {
+    padding: 60px 0;
+  }
+}
