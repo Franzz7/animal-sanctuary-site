@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ducks | Thors Field Animal Sanctuary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Thors Field Sanctuary</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="AnimalDonations.html" class="active">Animal Sponsor</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">Duck Sponsorship</p>
+      <h1>Sponsor a Duck</h1>
+      <p>Your support helps provide safe habitats, nutritious food, and ongoing care.</p>
+    </div>
+  </section>
+
+  <section class="animal-section">
+    <div class="container animal-layout">
+      <div class="animal-image">
+        <img src="images/duck-puddle.jpg" alt="Puddle the rescued duck" />
+      </div>
+      <div class="animal-text">
+        <h2>Puddle</h2>
+        <p class="animal-type">Duck</p>
+        <p>
+          Puddle is a cheerful duck who loves water, sunshine, and waddling alongside the others.
+          She is one of the friendliest birds in our care.
+        </p>
+        <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Puddle the Duck">Sponsor Puddle</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="animal-section section-alt">
+    <div class="container animal-layout reverse">
+      <div class="animal-image">
+        <img src="images/duck-marsh.jpg" alt="Marsh the rescued duck" />
+      </div>
+      <div class="animal-text">
+        <h2>Marsh</h2>
+        <p class="animal-type">Duck</p>
+        <p>
+          Marsh is calm and curious and enjoys foraging and relaxing in the pond.
+          He has settled wonderfully into sanctuary life.
+        </p>
+        <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Marsh the Duck">Sponsor Marsh</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="animal-section">
+    <div class="container animal-layout">
+      <div class="animal-image">
+        <img src="images/duck-willow.jpg" alt="Willow the rescued duck" />
+      </div>
+      <div class="animal-text">
+        <h2>Willow</h2>
+        <p class="animal-type">Duck</p>
+        <p>
+          Willow is bright, active, and always close to the group.
+          She thrives in her safe and peaceful sanctuary home.
+        </p>
+        <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Willow the Duck">Sponsor Willow</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsor-form" class="section form-section">
+    <div class="container form-wrapper">
+      <div>
+        <h2>Become a Monthly Sponsor</h2>
+        <p>This form is currently a design placeholder. Later, it can connect to Stripe or PayPal.</p>
+      </div>
+
+      <form class="donation-form">
+        <label for="animal">Animal you'd like to sponsor</label>
+        <input type="text" id="animal" name="animal" placeholder="Choose an animal" />
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" />
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" />
+
+        <label for="amount">Monthly amount</label>
+        <select id="amount" name="amount">
+          <option value="">Select an amount</option>
+          <option value="5">£5 per month</option>
+          <option value="10">£10 per month</option>
+          <option value="20">£20 per month</option>
+          <option value="30">£30 per month</option>
+          <option value="50">£50 per month</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Optional message"></textarea>
+
+        <button type="button" id="fakeDonateBtn" class="btn btn-primary full-width-btn">Continue to Sponsor</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Thors Field Animal Sanctuary</h3>
+        <p>Every animal deserves safety, care, and love.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="AnimalDonations.html">Animal Sponsor</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Email: hello@thorsfieldsanctuary.org</p>
+        <p>Phone: 01234 567890</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

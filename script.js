@@ -17,6 +17,8 @@ if (fakeDonateBtn) {
   fakeDonateBtn.addEventListener("click", () => {
     const selectedAnimal = animalInput ? animalInput.value : "";
 
+    if (!formMessage) return;
+
     if (!selectedAnimal) {
       formMessage.textContent = "Please choose an animal to sponsor.";
       return;
