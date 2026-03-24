@@ -77,7 +77,7 @@ a {
   align-items: center;
   background:
     linear-gradient(rgba(31, 42, 24, 0.45), rgba(31, 42, 24, 0.45)),
-    url('images/hero-sanctuary.jpg') center/cover no-repeat;
+    url('images/index/hero-sanctuary-1.jpg') center/cover no-repeat;
   color: white;
 }
 
@@ -235,6 +235,10 @@ a {
   order: 1;
 }
 
+.animal-text {
+  max-width: 520px;
+}
+
 .animal-text h2 {
   font-size: 2.2rem;
   margin-bottom: 8px;
@@ -343,89 +347,6 @@ h2 {
   color: #2f3b24;
 }
 
-@media (max-width: 900px) {
-  .two-column,
-  .animal-layout,
-  .form-wrapper,
-  .contact-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .animal-layout.reverse .animal-image,
-  .animal-layout.reverse .animal-text {
-    order: initial;
-  }
-
-  .hero h1,
-  .page-banner h1 {
-    font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .nav {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .section,
-  .animal-section {
-    padding: 60px 0;
-  }
-}
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.category-card {
-  display: block;
-  background: white;
-  border: 1px solid #eadfce;
-  border-radius: 20px;
-  padding: 32px 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  text-align: center;
-}
-
-.category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
-  border-color: #d9ccb8;
-}
-
-.category-card h2 {
-  margin-bottom: 12px;
-  color: #5b6f45;
-  font-size: 1.8rem;
-}
-
-.category-card p {
-  color: #4b4b4b;
-}
-
-@media (max-width: 900px) {
-  .category-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
 .category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -473,19 +394,6 @@ h2 {
   margin: 0;
 }
 
-@media (max-width: 900px) {
-  .category-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 .payment-options {
   display: flex;
   flex-direction: column;
@@ -502,8 +410,6 @@ h2 {
 .featured-sponsor {
   box-shadow: 0 12px 24px rgba(91, 111, 69, 0.22);
 }
-
-
 
 .hero-slider {
   position: relative;
@@ -593,6 +499,49 @@ h2 {
 }
 
 @media (max-width: 900px) {
+  .two-column,
+  .animal-layout,
+  .form-wrapper,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-grid,
+  .quick-links-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .animal-layout.reverse .animal-image,
+  .animal-layout.reverse .animal-text {
+    order: initial;
+  }
+
+  .hero h1,
+  .page-banner h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section,
+  .animal-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-grid,
   .quick-links-grid {
     grid-template-columns: 1fr;
   }
