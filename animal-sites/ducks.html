@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ducks | Thors Field Animal Sanctuary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -39,16 +42,13 @@
       <div class="animal-text">
         <h2>Puddle</h2>
         <p class="animal-type">Duck</p>
-        <p>
-          Puddle is a cheerful duck who loves water, sunshine, and waddling alongside the others.
-          She is one of the friendliest birds in our care.
-        </p>
+        <p>Puddle is a cheerful duck who loves water, sunshine, and waddling alongside the others. She is one of the friendliest birds in our care.</p>
         <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Puddle the Duck">Sponsor Puddle</a>
       </div>
     </div>
   </section>
 
-  <section class="animal-section section-alt">
+  <section class="animal-section section-soft">
     <div class="container animal-layout reverse">
       <div class="animal-image">
         <img src="images/ducks/duck-marsh.jpg" alt="Marsh the rescued duck" />
@@ -56,10 +56,7 @@
       <div class="animal-text">
         <h2>Marsh</h2>
         <p class="animal-type">Duck</p>
-        <p>
-          Marsh is calm and curious and enjoys foraging and relaxing in the pond.
-          He has settled wonderfully into sanctuary life.
-        </p>
+        <p>Marsh is calm and curious and enjoys foraging and relaxing in the pond. He has settled wonderfully into sanctuary life.</p>
         <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Marsh the Duck">Sponsor Marsh</a>
       </div>
     </div>
@@ -73,10 +70,7 @@
       <div class="animal-text">
         <h2>Willow</h2>
         <p class="animal-type">Duck</p>
-        <p>
-          Willow is bright, active, and always close to the group.
-          She thrives in her safe and peaceful sanctuary home.
-        </p>
+        <p>Willow is bright, active, and always close to the group. She thrives in her safe and peaceful sanctuary home.</p>
         <a href="#sponsor-form" class="btn btn-primary sponsor-btn" data-animal="Willow the Duck">Sponsor Willow</a>
       </div>
     </div>
@@ -85,20 +79,17 @@
   <section id="sponsor-form" class="section form-section">
     <div class="container form-wrapper">
       <div>
+        <span class="section-label">Monthly Giving</span>
         <h2>Become a Monthly Sponsor</h2>
         <p>This form is currently a design placeholder. Later, it can connect to Stripe or PayPal.</p>
       </div>
-
       <form class="donation-form">
         <label for="animal">Animal you'd like to sponsor</label>
         <input type="text" id="animal" name="animal" placeholder="Choose an animal" />
-
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" placeholder="Your full name" />
-
         <label for="email">Your email</label>
         <input type="email" id="email" name="email" placeholder="Your email address" />
-
         <label for="amount">Monthly amount</label>
         <select id="amount" name="amount">
           <option value="">Select an amount</option>
@@ -108,10 +99,8 @@
           <option value="30">£30 per month</option>
           <option value="50">£50 per month</option>
         </select>
-
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" placeholder="Optional message"></textarea>
-
         <button type="button" id="fakeDonateBtn" class="btn btn-primary full-width-btn">Continue to Sponsor</button>
         <p id="formMessage" class="form-message"></p>
       </form>
@@ -119,25 +108,27 @@
   </section>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Thors Field Animal Sanctuary</h3>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Thors Field Animal Sanctuary</div>
         <p>Every animal deserves safety, care, and love.</p>
       </div>
-      <div>
+      <div class="footer-links">
         <h4>Quick Links</h4>
-        <p><a href="../index.html">Home</a></p>
-        <p><a href="../AnimalDonations.html">Animal Sponsor</a></p>
-        <p><a href="../contact.html">Contact</a></p>
+        <a href="../index.html">Home</a>
+        <a href="../AnimalDonations.html">Animal Sponsor</a>
+        <a href="../contact.html">Contact</a>
       </div>
-      <div>
+      <div class="footer-contact">
         <h4>Support</h4>
-        <p>Email: hello@thorsfieldsanctuary.org</p>
-        <p>Phone: 01234 567890</p>
+        <p>hello@thorsfieldsanctuary.org</p>
+        <p>01234 567890</p>
       </div>
     </div>
+    <div class="footer-base">
+      <p>© 2025 Thors Field Animal Sanctuary. All rights reserved.</p>
+    </div>
   </footer>
-
   <script src="../script.js"></script>
 </body>
 </html>
